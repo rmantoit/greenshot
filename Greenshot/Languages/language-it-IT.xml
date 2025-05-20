@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <language description="Italiano" ietf="it-IT" version="1.0.4" languagegroup="1">
   <resources>
   	<resource name="about_bugs">Per favore, riporta le anomalie a</resource>
@@ -8,12 +8,11 @@
 	<resource name="about_license">Copyright (C) 2007-2013 Thomas Braun, Jens Klingen, Robin Krom
 Greenshot viene fornito SENZA ALCUNA GARANZIA. Questo è "free software", e potete ri-distribuirlo secondo certe condizioni.
 Dettagli sulla General Public License GNU:</resource>
-	<resource name="about_title">Notizie su Greenshot</resource>
-	<resource name="about_translation">Traduzione in Italiano curata da tonytogna</resource>
+	<resource name="about_title">Informazioni su Greenshot</resource>
+	<resource name="about_translation">Traduzione in Italiano curata da tonytogna e rantoit</resource>
 	<resource name="application_title">Greenshot - Uno straordinario strumento per copiare immagini dallo schermo</resource>
 	<resource name="bugreport_cancel">Chiudi</resource>	
 	<resource name="bugreport_info">Opss, si è verificato un errore inaspettato.
-
 La buona notizia è: puoi aiutarci ad eliminarlo riempiendo la segnalazione errori.
 Visita la pagina internet qui sotto, crea una nuova segnalazione errore e copia nella descrizione il contenuto preso dall'area di testo.
 
@@ -23,6 +22,8 @@ Inoltre, apprezzeremo molto se prima di inserire, tu controllassi se esiste già
 	<resource name="CANCEL">Annulla</resource>
 	<resource name="clipboard_error">Si è verificato un errore inaspettato durante la scrittura sugli appunti.</resource>
 	<resource name="clipboard_inuse">Greenshot non è riuscito a scrivere sugli appunti poichè il processo {0} teneva l'accesso bloccato.</resource>
+	<resource name="clipboard_noimage">Non trovo l'immagine negli appunti (clipboard).</resource>
+	<resource name="ClipboardFormat.BITMAP">Windows Bitmap</resource>
 	<resource name="ClipboardFormat.DIB">Device Independend Bitmap (DIB)</resource>
 	<resource name="ClipboardFormat.HTML">HTML</resource>
 	<resource name="ClipboardFormat.HTMLDATAURL">HTML con immagini in linea</resource>
@@ -36,6 +37,8 @@ Inoltre, apprezzeremo molto se prima di inserire, tu controllassi se esiste già
 	<resource name="colorpicker_red">Rosso</resource>
 	<resource name="colorpicker_title">Scelta colore</resource>
 	<resource name="colorpicker_transparent">Trasparente</resource>
+	<resource name="com_rejected">La destinazione {0} ha rifiutato l'accesso a Greenshot, probabilmente una finestra di dialogo è aperta. Chiudi la finestra di dialogo e riproiva.</resource>
+	<resource name="com_rejected_title">Rifiutato l'accesso a Greenshot.</resource>
 	<resource name="config_unauthorizedaccess_write">Il file di configurazione di Greenshot non può essere salvato. Controllare i permessi di accesso per '{0}'.</resource>
 	<resource name="contextmenu_about">Notizie su Greenshot</resource>
 	<resource name="contextmenu_capturearea">Cattura regione</resource>
@@ -59,6 +62,14 @@ Inoltre, apprezzeremo molto se prima di inserire, tu controllassi se esiste già
 	<resource name="contextmenu_quicksettings">Preferenze veloci</resource>
 	<resource name="contextmenu_settings">Preferenze...</resource>
 	<resource name="destination_exportfailed">Errori durente l'esportazione verso {0}. Pregasi riprovare nuovamente.</resource>
+	<resource name="editor_align_bottom">In Basso</resource>
+	<resource name="editor_align_center">Centro</resource>
+	<resource name="editor_align_horizontal">Allineamento Orizzontcale</resource>
+	<resource name="editor_align_left">Sinistra</resource>
+	<resource name="editor_align_middle">In Mezzo</resource>
+	<resource name="editor_align_right">Destra</resource>
+	<resource name="editor_align_top">In Alto</resource>
+	<resource name="editor_align_vertical">Allineamento Verticale</resource>
 	<resource name="editor_arrange">Disponi</resource>
 	<resource name="editor_arrowheads">Tipi di punta di freccia</resource>
 	<resource name="editor_arrowheads_both">Entrambe</resource>
@@ -126,8 +137,10 @@ Inoltre, apprezzeremo molto se prima di inserire, tu controllassi se esiste già
 	<resource name="editor_print">Stampa</resource>
 	<resource name="editor_redo">Ripeti azione {0}</resource>
 	<resource name="editor_resetsize">Azzera Dimensione</resource>	
-	<resource name="editor_rotateccw">Ruota senso antiorario</resource>
-	<resource name="editor_rotatecw">Ruota senso orario</resource>	
+	<resource name="editor_resize_percent">Percentuale</resource>
+	<resource name="editor_resize_pixel">Pixel</resource>
+	<resource name="editor_rotateccw">Ruota in senso antiorario</resource>
+	<resource name="editor_rotatecw">Ruota in senso orario</resource>	
 	<resource name="editor_save">Salva</resource>
 	<resource name="editor_save_objects">Salva oggetti su file</resource>
 	<resource name="editor_saveas">Salva come...</resource>
@@ -135,9 +148,9 @@ Inoltre, apprezzeremo molto se prima di inserire, tu controllassi se esiste già
 	<resource name="editor_senttoprinter">Stampa inviata a '{0}'.</resource>
 	<resource name="editor_shadow">Ombra</resource>
 	<resource name="editor_image_shadow">Ombra</resource>
-	<resource name="editor_storedtoclipboard">Immagine posta negli appunti (clipboard).</resource>
+	<resource name="editor_storedtoclipboard">Immagine copiata negli appunti (clipboard).</resource>
 	<resource name="editor_thickness">Spessore linea</resource>
-	<resource name="editor_title">Gestione Immagini di Greenshot</resource>
+	<resource name="editor_title">Gestione Immagini Greenshot</resource>
 	<resource name="editor_torn_edge">Bordi strappati</resource>
 	<resource name="editor_undo">Annulla azione {0}</resource>
 	<resource name="editor_uponelevel">Su di un livello</resource>
@@ -152,6 +165,7 @@ Verifica l'accesso in scrittura sulla destinazione di salvataggio.</resource>
 	<resource name="error_openfile">Il file "{0}" non può essere aperto.</resource>
 	<resource name="error_openlink">Impossibile aprire il link '{0}'.</resource>
 	<resource name="error_save">Impossibile salvare l'immagine, è necessario trovare una destinazione valida.</resource>
+    <resource name="error_save_invalid_chars">Il nome del file o della cartella non è valido. Per cortesia correggi il nome del file o del percorso e prova ancora.</resource>
 	<resource name="expertsettings">Utente esperto</resource>
 	<resource name="expertsettings_autoreducecolors">Crea una immagine 8-bit se i colori sono meno di 256 e l'immagine ha &gt; 8 bits</resource>
 	<resource name="expertsettings_checkunstableupdates">Controlla anche per Aggiornamenti instabili</resource>
@@ -177,10 +191,14 @@ Verifica l'accesso in scrittura sulla destinazione di salvataggio.</resource>
 	<resource name="printoptions_allowenlarge">Ingrandisci fino alle dimensioni pagina</resource>
 	<resource name="printoptions_allowrotate">Ruota a seconda dell'orientamento pagina</resource>
 	<resource name="printoptions_allowshrink">Riduci alle dimensioni pagina</resource>
+    <resource name="printoptions_colors">Impostazioni Colore</resource>
 	<resource name="printoptions_dontaskagain">Salva le opzioni come default, e non chiedere più</resource>
 	<resource name="printoptions_inverted">Stampa con colori invertiti (negativo)</resource>
+    <resource name="printoptions_layout">Impostazioni layout Pagina</resource>
+    <resource name="printoptions_printcolor">Stampa a Colori</resource>
 	<resource name="printoptions_printgrayscale">Forza stampa in scala di grigi</resource>
-	<resource name="printoptions_timestamp">Stampa data / ora sul piede della pagina</resource>
+    <resource name="printoptions_printmonochrome">Forza stampa in bianco e nero</resource>
+    <resource name="printoptions_timestamp">Stampa data / ora sul piede della pagina</resource>
 	<resource name="printoptions_title">Opzioni di stampa di Greenshot</resource>
 	<resource name="qualitydialog_dontaskagain">Save come qualità di default, e non chiedere più</resource>
 	<resource name="qualitydialog_title">Qualità di Greenshot</resource>
@@ -245,6 +263,7 @@ corrente, es: 11_58_32 (più l'estensione definita nelle impostazioni)</resource
 	<resource name="settings_showflashlight">Mostra torcia elettrica</resource>
 	<resource name="settings_shownotify">Mostra le notifiche</resource>
 	<resource name="settings_storagelocation">Destinaz. salvataggio</resource>
+	<resource name="settings_zoom">Mostra Lente di Ingrandimento</resource>
 	<resource name="settings_title">Impostazioni</resource>
 	<resource name="settings_tooltip_filenamepattern">Modello usato per generare il nome file in fase di salvataggio delle immagini</resource>
 	<resource name="settings_tooltip_language">Lingua dell'interfaccia utente di Greenshot (richiede il riavvio)</resource>
@@ -269,5 +288,33 @@ In alternativa alle scorciatoie di tastiera, tutte le funzioni di Greenshot sono
 	<resource name="WindowCaptureMode.Auto">Automaticamente</resource>
 	<resource name="WindowCaptureMode.GDI">Usa i colori di default</resource>
 	<resource name="WindowCaptureMode.Screen">Come visualizzata</resource>
+  
+    <!-- 1.2 -->
+    <resource name="editor_dropshadow_darkness">Oscurità dell'Ombra</resource>
+    <resource name="editor_dropshadow_offset">Offset dell'ombra</resource>
+    <resource name="editor_dropshadow_settings">Impostazioni dell'ombra proiettata</resource>
+    <resource name="editor_dropshadow_thickness">Spessore dell'ombra</resource>
+
+    <resource name="editor_tornedge_horizontaltoothrange">Gamma di denti orizzontali</resource>
+    <resource name="editor_tornedge_settings">Impostazioni bordi strappati</resource>
+    <resource name="editor_tornedge_toothsize">Dimensione del dente</resource>
+    <resource name="editor_tornedge_verticaltoothrange">Gamma verticale dei denti</resource>
+    <resource name="editor_tornedge_all">Strappa tutti i lati</resource>
+    <resource name="editor_tornedge_left">Lato sinistro</resource>
+    <resource name="editor_tornedge_right">Lato destro</resource>
+    <resource name="editor_tornedge_top">Lato superiore</resource>
+    <resource name="editor_tornedge_bottom">Lato inferiore</resource>
+    <resource name="editor_tornedge_shadow">Genera ombra</resource>
+    
+    <resource name="editor_counter">Aggiungi Numeri (I)</resource>
+    <resource name="editor_speechbubble">Aggiungi Fumetto con testo (S)</resource>
+
+    <resource name="editor_resize">Ridimensiona</resource>
+    <resource name="editor_resize_settings">Impostazione Ridimensiona</resource>
+    <resource name="editor_resize_aspectratio">Mantiene rapporto di aspetto</resource>
+    <resource name="editor_resize_width">Larghezza</resource>
+    <resource name="editor_resize_height">Altezza</resource>
+	<resource name="settings_iconsize">Dimensione Icone</resource>
+  
   </resources>
 </language>
